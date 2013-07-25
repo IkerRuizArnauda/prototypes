@@ -14,7 +14,9 @@ namespace Assets.Scripts
         public int Rating;
         public int SubGenre = 0xFFF;
         public List<GameFeature> Features = new List<GameFeature>();
-        public GameScope Scope;
+
+        //Higher scope = more allowed features.
+        public int Scope;
 
         //Sales data
         public int RlsMonth, RlsYear;
@@ -23,13 +25,7 @@ namespace Assets.Scripts
     }
 
 
-    public enum GameScope{
-        Small,
-        Medium,
-        Large,
-        Massive
-
-    }
+   
 
     
 
